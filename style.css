@@ -1,6 +1,8 @@
 *{
     font-family: "HankenGrotesk-VariableFont_wght";
     font-size: 18px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .result,.sommaire{
@@ -11,7 +13,6 @@
 
 p{
    color: hsl(224, 30%, 27%);
-   margin: 0%;
 
 }
 
@@ -54,6 +55,12 @@ p span{
     margin-right: 20px;
     margin-bottom: 10px;
     margin-top: 10px;
+}
+.sommaire span{
+    margin: 0px;
+}
+.sommair p{
+    white-space: nowrap;
 }
 button{
 
@@ -155,6 +162,27 @@ button :hover{
 }
 
 @media screen and (max-width: 375px) {
+
+    body{
+        width: 100%;
+        height: 100%;
+     
+    }
+
+    main{
+    flex-direction: column;
+    width: 100%;
+}
+.result,.sommaire{
+    width: 100%;
+}
+.result{
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+}
+}
+
+@media screen and (max-width: 700px) {
 
     body{
         width: 100%;
